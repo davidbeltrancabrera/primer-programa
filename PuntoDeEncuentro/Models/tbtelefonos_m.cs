@@ -15,16 +15,16 @@ namespace PuntoDeEncuentro.Models
         [Key]
         object idtelefonos { get; set; }
         [Required]
-        [RegularExpression("[0-9]", ErrorMessage = "Error")]
+        [RegularExpression(@"[0-9]*\.?[0-9]+", ErrorMessage = "Error dato incorrecto")]
         object numero { get; set; }
         [Required]
-        [RegularExpression("[0-9]", ErrorMessage = "Error")]
+        [RegularExpression(@"[0-9]*\.?[0-9]+", ErrorMessage = "Error dato incorrecto")]
         object tipo { get; set; }
         [Required]
-        [RegularExpression("[0-9]", ErrorMessage = "Error")]
+        [RegularExpression(@"[0-9]*\.?[0-9]+", ErrorMessage = "Error dato incorrecto")]
         object codigoarea { get; set; }
         [Required]
-        [RegularExpression("[0-9]", ErrorMessage = "Error")]
+        [RegularExpression(@"[0-9]*\.?[0-9]+", ErrorMessage = "Error dato incorrecto")]
         object idlugares { get; set; }
         [Required]
         [DataType(DataType.Text, ErrorMessage = "error fecha")]

@@ -15,10 +15,10 @@ namespace PuntoDeEncuentro.Models
         [Key]
         object idcatlugares { get; set; }
         [Required]
-        [RegularExpression("[0-9]", ErrorMessage = "Error")]
+        [RegularExpression(@"[0-9]*\.?[0-9]+", ErrorMessage = "Error dato incorrecto")]
         object idcategorias { get; set; }
         [Required]
-        [RegularExpression("[0-9]", ErrorMessage = "Error")]
+        [RegularExpression(@"[0-9]*\.?[0-9]+", ErrorMessage = "Error dato incorrecto")]
         object idlugares { get; set; }
         [Required]
         [DataType(DataType.Text, ErrorMessage = "error fecha")]

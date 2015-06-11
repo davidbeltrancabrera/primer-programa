@@ -15,10 +15,10 @@ namespace PuntoDeEncuentro.Models
         [Key]
         object idvotousuario { get; set; }
         [Required]
-        [RegularExpression("[0-9]",ErrorMessage="Error")]
+        [RegularExpression(@"[0-9]*\.?[0-9]+", ErrorMessage = "Error dato incorrecto")]
         object idlugar { get; set; }
         [Required]
-        [RegularExpression("[0-9]", ErrorMessage = "Error")]
+        [RegularExpression(@"[0-9]*\.?[0-9]+", ErrorMessage = "Error dato incorrecto")]
         object iduser { get; set; }
         [Required]
         object scor { get; set; }

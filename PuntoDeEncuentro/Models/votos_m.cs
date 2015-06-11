@@ -12,15 +12,15 @@ namespace PuntoDeEncuentro.Models
     public interface votos
     {
         [Required]
-        [RegularExpression("[0-9]", ErrorMessage="Error dato incorrecto")]
+        [RegularExpression(@"[0-9]*\.?[0-9]+", ErrorMessage = "Error dato incorrecto")]
         object id { get; set; }
         [Required]
         object titulo{get;set;}
         [Required]
-        [RegularExpression("[0-9]", ErrorMessage = "Error dato incorrecto")]
+        [RegularExpression(@"[0-9]*\.?[0-9]+", ErrorMessage = "Error dato incorrecto")]
         object total_votes { get; set; }
         [Required]
-        [RegularExpression("[0-9]", ErrorMessage = "Error dato incorrecto")]
+        [RegularExpression(@"[0-9]*\.?[0-9]+", ErrorMessage = "Error dato incorrecto")]
         object total_value { get; set; }
         [Required]
         object used_ips { get; set; }

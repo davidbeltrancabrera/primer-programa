@@ -17,10 +17,10 @@ namespace PuntoDeEncuentro.Models
         [Required]
               object nombre { get; set; }
         [Required]
-        [RegularExpression("[0-9]", ErrorMessage = "Error")]
+        [RegularExpression(@"[0-9]*\.?[0-9]+", ErrorMessage = "Error dato incorrecto")]
         object responsable { get; set; }
         [Required]
-        [RegularExpression("[0-9]", ErrorMessage = "Error")]
+        [RegularExpression(@"[0-9]*\.?[0-9]+", ErrorMessage = "Error dato incorrecto")]
         object padre { get; set; }
         [Required]
         [DataType(DataType.Text, ErrorMessage = "error fecha")]

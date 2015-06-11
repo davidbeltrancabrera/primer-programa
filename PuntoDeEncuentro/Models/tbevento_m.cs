@@ -16,12 +16,17 @@ namespace PuntoDeEncuentro.Models
         }
     }
     public interface itbevento {
-        [Required] //debe tener algo de informacion
-         object estado { get; set; }
         [MinLength(2)]
         object titulo { get; set; }
 
         [Key]
         object idevento { get; set; }
+        [DataType(DataType.Text, ErrorMessage = "error fecha")]
+        object fechacreacion { get; set; }
+        [Required]
+        [DataType(DataType.Text, ErrorMessage = "error fecha")]
+        object fechamodificacion { get; set; }
+        [Required]
+        object estado { get; set; }
     }
 }

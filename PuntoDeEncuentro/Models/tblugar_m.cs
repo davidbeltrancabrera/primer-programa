@@ -17,15 +17,15 @@ namespace PuntoDeEncuentro.Models
         [Required]
         object titulo { get; set; }
         [Required]
-        [RegularExpression("[0-9]", ErrorMessage = "Error")]
+        [RegularExpression(@"[0-9]*\.?[0-9]+", ErrorMessage = "Error dato incorrecto")]
         object num_votes { get; set; }
         [Required]
-        [RegularExpression("[0-9]", ErrorMessage = "Error")]
+        [RegularExpression(@"[0-9]*\.?[0-9]+", ErrorMessage = "Error dato incorrecto")]
         object total_score { get; set; }
         [Required]
         object rating { get; set; }
         [Required]
-        [RegularExpression("[0-9]", ErrorMessage = "Error")]
+        [RegularExpression(@"[0-9]*\.?[0-9]+", ErrorMessage = "Error dato incorrecto")]
         object id { get; set; }
         [Required]
         [DataType(DataType.Text, ErrorMessage = "error fecha")]
