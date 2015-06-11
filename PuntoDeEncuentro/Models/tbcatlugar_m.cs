@@ -5,11 +5,11 @@ using System.Web;
 using System.ComponentModel.DataAnnotations;
 namespace PuntoDeEncuentro.Models
 {
-    [MetadataType(typeof(tbcatlugar))]
+    [MetadataType(typeof(itbcatlugar))]
     public partial class tbcatlugar
     {
     }
-    public interface tbcatlugar
+    public interface itbcatlugar
     {
         [Required]
         [Key]

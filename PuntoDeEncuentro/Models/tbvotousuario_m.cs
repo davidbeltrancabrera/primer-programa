@@ -5,11 +5,11 @@ using System.Web;
 using System.ComponentModel.DataAnnotations;
 namespace PuntoDeEncuentro.Models
 {
-    [MetadataType(typeof(tbvotousuario))]
+    [MetadataType(typeof(itbvotousuario))]
     public partial class tbvotousuario
     {
     }
-    public interface tbvotousuario
+    public interface itbvotousuario
     {
         [Required]
         [Key]

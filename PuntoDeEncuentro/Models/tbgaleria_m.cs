@@ -5,11 +5,11 @@ using System.Web;
 using System.ComponentModel.DataAnnotations;
 namespace PuntoDeEncuentro.Models
 {
-    [MetadataType(typeof(tbgaleria))]
+    [MetadataType(typeof(itbgaleria))]
     public partial class tbgaleria
     {
     }
-    public interface tbgaleria
+    public interface itbgaleria
     {
         [Required]
         [Key]

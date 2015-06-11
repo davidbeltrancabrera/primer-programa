@@ -5,11 +5,11 @@ using System.Web;
 using System.ComponentModel.DataAnnotations;
 namespace PuntoDeEncuentro.Models
 {
-    [MetadataType(typeof(votos))]
+    [MetadataType(typeof(ivotos))]
     public partial class votos
     {
     }
-    public interface votos
+    public interface ivotos
     {
         [Required]
         [RegularExpression(@"[0-9]*\.?[0-9]+", ErrorMessage = "Error dato incorrecto")]

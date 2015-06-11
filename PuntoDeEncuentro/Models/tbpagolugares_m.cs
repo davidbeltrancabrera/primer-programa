@@ -5,11 +5,11 @@ using System.Web;
 using System.ComponentModel.DataAnnotations;
 namespace PuntoDeEncuentro.Models
 {
-    [MetadataType(typeof(tbpagolugares))]
+    [MetadataType(typeof(itbpagolugares))]
     public partial class tbpagolugares
     {
     }
-    public interface tbpagolugares
+    public interface itbpagolugares
     {
         [Required]
         [Key]

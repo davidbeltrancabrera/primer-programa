@@ -5,11 +5,11 @@ using System.Web;
 using System.ComponentModel.DataAnnotations;
 namespace PuntoDeEncuentro.Models
 {
-    [MetadataType(typeof(tbhorario))]
+    [MetadataType(typeof(itbhorario))]
     public partial class tbhorario
     {
     }
-    public interface tbhorario
+    public interface itbhorario
     {
         [Required]
         [Key]
